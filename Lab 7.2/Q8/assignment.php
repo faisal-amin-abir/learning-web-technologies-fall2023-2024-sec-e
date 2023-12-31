@@ -28,10 +28,10 @@
         <tr>
           <td>Gender</td>
           <td>
-            <input type="radio" name="Male" id="Male" value="Male" /> Male
-            <input type="radio" name="Female" id="Female" value="Female" />
+            <input type="radio" name="gender" id="male" value="Male" /> Male
+            <input type="radio" name="gender" id="female" value="Female" />
             Female
-            <input type="radio" name="Others" id="Others" value="Others" />
+            <input type="radio" name="gender" id="others" value="Others" />
             Others
           </td>
         </tr>
@@ -58,9 +58,9 @@
         <tr>
           <td>Degree</td>
           <td>
-            <input type="checkbox" name="SSC" id="SSC" value="SSC" />SSC
-            <input type="checkbox" name="HSC" id="HSC" value="HSC" />HSC
-            <input type="checkbox" name="Bsc" id="BSc" value="BSc" />BSc
+            <input type="checkbox" name="SSC" id="ssc" value="SSC" />SSC
+            <input type="checkbox" name="HSC" id="hsc" value="HSC" />HSC
+            <input type="checkbox" name="BSC" id="bsc" value="BSC" />BSc
           </td>
         </tr>
         <tr>

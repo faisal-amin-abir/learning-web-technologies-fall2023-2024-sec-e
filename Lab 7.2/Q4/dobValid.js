@@ -7,8 +7,14 @@ function isValid(){
     let month = parseInt(data[1], 10);
     let year = parseInt(data[0], 10);
 
-                                                      
+    if(day >= 0 && day <= 31 && month >= 1 && month <= 12 && year >= 1900 && year <= 2016) {
+        alert("success");
+        return true;
+    } 
+    else{
+        alert("DOB is not in correct formate");
+        return false;
+    }                                                
 
-    alert("success");
-    return true;
+    
 }
