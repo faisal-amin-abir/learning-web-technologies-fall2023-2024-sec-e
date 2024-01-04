@@ -18,7 +18,7 @@
             $content .= "<tr><td colspan= '4' style = 'text-align:center;'>Users</td></tr>";
             $content .= "<tr><td>ID</td><td>Name</td><td>Email</td><td>User Type</td></tr>";
             for($i = 0; $i< count($users); $i++){
-                $content .= "<tr><td>".$users[$i]['id']."</td>";
+                $content .= "<tr><td>".$users[$i]['given_id']."</td>";
                 $content .= "<td>".$users[$i]['user_name']."</td>";
                 $content .= "<td>".$users[$i]['email']."</td>";
                 $content .= "<td>".$users[$i]['user_type']."</td></tr>";

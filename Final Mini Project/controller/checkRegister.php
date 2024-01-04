@@ -3,7 +3,7 @@ require_once("checkValidation.php");
 require_once("../model/userModel.php");
 
 
-$id = $_REQUEST["userId"];
+$given_id = $_REQUEST["userId"];
 $name = $_REQUEST["regName"];
 $pass = $_REQUEST["regPass"];
 $rePass = $_REQUEST["confPass"];
@@ -26,11 +26,11 @@ if(isNameValid($name)){
                         if(isMailAvailable($email)){
                             
                             // id check
-                            if(isIdValid($id)){
-                                if(isIdAvailable($id)){
+                            if(isIdValid($given_id)){
+                                if(isIdAvailable($given_id)){
                                     // all condition checked
                                     // enter data in database
-                                    if(insertUser($name, $pass, $email, $userType)){
+                                    if(insertUser($given_id, $name, $pass, $email, $userType)){
                                         echo "Successfully inserted";
                                         header("location: ../view/login.php");
                                     }

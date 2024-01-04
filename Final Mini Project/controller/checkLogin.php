@@ -3,17 +3,18 @@ session_start();
 
 require_once("../model/userModel.php");
 
-$username = $_REQUEST["user_name"];
+$id = $_REQUEST["id"];
 $password = $_REQUEST["password"];
 
-$user = getUserByUsername($username);
+$user = getUserByUserID($id);
 
 if ($user) {
     if ($password == $user["password"]) {
-        $_SESSION['user_name'] = $username;
+        $_SESSION['user_name'] = $user['user_name'];
         $_SESSION['user_type'] = $user['user_type'];
         $_SESSION['id'] = $user['id'];
         $_SESSION['email'] = $user['email'];
+        $_SESSION['given_id'] = $user['given_id'];
 
         if ($user['user_type'] == 'admin') {
             header("location: ../view/adminDashboard.php");

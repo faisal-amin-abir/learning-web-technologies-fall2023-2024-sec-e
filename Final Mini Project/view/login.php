@@ -10,8 +10,8 @@
     <fieldset style="width: 10%; text-align:left;" >
         <legend>LOGIN</legend>
         <form action="../controller/checkLogin.php" id = "loginForm">
-            User Name <br>
-            <input type="text" id = "user_name" name = "user_name"> <br>
+            User ID <br>
+            <input type="text" id = "id" name = "id"> <br>
             Password <br>
             <input type="password" id = "password" name = "password"> <br>
             <input type="checkbox" id = "loginCheck" value = "memorize"> Remember Me 
